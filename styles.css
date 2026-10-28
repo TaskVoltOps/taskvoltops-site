@@ -16,3 +16,30 @@
     background: #f9bd45;
     color: #112033;
 }
+
+/* TASKVOLT_V2 */
+.header nav{flex-wrap:wrap}
+.tv-service{display:flex;flex-direction:column}
+.tv-service h4{margin:18px 0 4px;color:var(--accent);font-size:12px;text-transform:uppercase}
+.tv-service .deliverable{margin-top:auto;padding-top:18px}
+.tv-note{font-size:12px!important}
+.tv-btn{display:inline-block;margin-top:17px;padding:11px 16px;border:1px solid var(--accent);color:var(--accent);border-radius:8px;text-decoration:none;font-weight:800;font-size:14px}
+.tv-btn:hover{background:var(--accent);color:var(--dark)}
+.tv-section{padding:75px clamp(20px,7vw,112px)}
+.tv-section h2{font-size:clamp(30px,4vw,50px);line-height:1.15}
+.tv-section>p{max-width:820px;color:var(--muted)}
+.tv-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin:28px 0}
+.tv-tile{padding:22px;border:1px solid var(--line);background:var(--panel);border-radius:14px}
+.tv-tile p{font-size:14px;color:var(--muted)}
+.tv-head{display:flex;justify-content:space-between;gap:12px}
+.tv-head strong,.tv-price{color:var(--accent);white-space:nowrap}
+.tv-price{font-size:31px;font-weight:800}
+.tv-price small{font-size:13px;color:var(--muted);font-weight:400}
+.tv-plans{background:#101e2e}
+.tv-section a:not(.tv-btn),.tv-policy a,footer a{color:var(--accent)}
+.tv-policy{max-width:900px;margin:auto;padding:85px 24px 110px}
+.tv-policy h1{font-size:48px}
+.tv-policy h2{margin-top:35px}
+.tv-policy p{color:var(--muted);line-height:1.8}
+@media(max-width:950px){.tv-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.tv-grid{grid-template-columns:1fr}.tv-section{padding:55px 20px}.header nav{gap:8px}}
